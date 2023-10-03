@@ -7,7 +7,6 @@ class RestaurantRepository {
   Future<RestaurantModel> getRestaurantDetails(String restaurantKey) async {
     const apiUrl = 'https://kezel.co/api/getAllDigitalMenu.php';
 
-    // Create the request body with the restaurant key
     final requestBody = {'key': restaurantKey};
 
     try {
